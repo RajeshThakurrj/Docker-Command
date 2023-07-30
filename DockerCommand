@@ -1,0 +1,26 @@
+Docker Command:-
+Way to crate images on Docker:-
+i) Take image from dockerhub
+ii) Create a image from dockerfile
+iii) Create a image from existing container
+
+i) Take image from dockerhub:-
+To pull/download image from dockerhub command is:-docker pull ubuntu(image name)
+To install/run image command :- docker run ubuntu(image name)
+There is also a different way to create and start  container:-
+docker run -it --name container1(name of container) ubuntu(name of image) /bin/bash/
+ 
+ii)Create a image from docker file:-
+We need to create file with name Dockerfile:- touch Dockerfile
+We need to edit this file with nano/vi (any editor) :- touch Dockerfile
+We need to now add base image which we required to run :- FROM ubuntu(name of image)
+We need to save the file and exit from file 
+Now we need to build the image with command :- docker build -t myimage(name of new image) .
+Now we can check , our images is created or not :- docker images
+
+iii) Create a image from existing container
+We need to need to open exiting container for that we first need to start container if it is in stop condition :- docker start container(name of the container )
+Now after start we need to attach(go inside) into container :- docker attach container (container name)
+Now make any change if require and exit the container
+Now use commit command to make images of it:- docker commit container(existing container name ) myimage (new image name)
+These are the serveral steps which required to create image in docker
