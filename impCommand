@@ -1,0 +1,74 @@
+As of my knowledge cutoff in September 2021, here is a list of some commonly used Docker commands and their usages:
+1. docker build :
+   Usage: Build a Docker image from a Dockerfile.
+   Example: `docker build -t my_image_name .`
+
+2. docker run:
+   Usage: Run a container based on a specific image.
+   Example: `docker run -d -p 8080:80 my_image_name`
+
+3. docker ps:
+   Usage: List running containers.
+   Example: docker ps
+
+4. docker ps -a:
+   Usage: List all containers (both running and stopped).
+   Example: docker ps -a
+
+5. docker stop :
+   Usage: Stop a running container.
+   Example: docker stop container_id
+
+6. docker start:
+   Usage: Start a stopped container.
+   Example: `docker start container_id`
+
+7. docker restart :
+   Usage: Restart a running container.
+   Example: `docker restart container_id`
+
+8. docker rm :
+   Usage: Remove a stopped container.
+   Example: `docker rm container_id`
+
+9. docker rmi:
+   Usage: Remove a Docker image.
+   Example: `docker rmi image_id`
+
+10. docker exec :
+    Usage: Execute a command inside a running container.
+    Example: `docker exec -it container_id /bin/bash`
+
+11. docker logs :
+    Usage: View the logs of a running container.
+    Example: `docker logs container_id`
+
+12. docker pull :
+    Usage: Pull a Docker image from a registry.
+    Example: `docker pull image_name`
+
+13. docker push :
+    Usage: Push a Docker image to a registry.
+    Example: `docker push image_name`
+
+14. docker images:
+    Usage: List available Docker images on your system.
+    Example: `docker images`
+
+15. docker network create :
+    Usage: Create a Docker network for containers to communicate with each other.
+    Example: `docker network create my_network`
+
+16. docker volume create :
+    Usage: Create a Docker volume for persistent data storage.
+    Example: `docker volume create my_volume`
+
+17. docker-compose up :
+    Usage: Start services defined in a `docker-compose.yml` file.
+    Example: `docker-compose up -d`
+
+18. docker-compose down :
+    Usage: Stop and remove services defined in a `docker-compose.yml` file.
+    Example: `docker-compose down`
+
+These are some of the fundamental Docker commands that you can use to manage containers, images, networks, and volumes. Docker has many more commands and options to explore, so I recommend referring to the official Docker documentation for a comprehensive list and the most up-to-date information.
