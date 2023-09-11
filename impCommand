@@ -1,4 +1,4 @@
-As of my knowledge cutoff in September 2021, here is a list of some commonly used Docker commands and their usages:
+Here is a list of some commonly used Docker commands and their usages:
 1. docker build :
    Usage: Build a Docker image from a Dockerfile.
    Example: `docker build -t my_image_name .`
